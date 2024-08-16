@@ -41,68 +41,164 @@ void display(uint8_t led)
 	switch(led)
 	{
 	case 1:
-	GPIOE->ODR &= ~(255 << 7);
-	GPIOE->ODR |= (195 << 8);
+	GPIOE->ODR &= ~(1 << 7);
+	GPIOE->ODR |= (1 << 8);
+	GPIOE->ODR |= (1 << 9);
+	GPIOE->ODR &= ~(1 << 10);
+	GPIOE->ODR &= ~(1 << 11);
+	GPIOE->ODR &= ~(1 << 12);
+	GPIOE->ODR &= ~(1 << 13);
+	GPIOE->ODR |= (1 << 14); // 1 olduðu zaman 7 segment 1. þeklinde yanacak.
 	break;
 	case 2:
-	GPIOE->ODR &= ~(255 << 7);
-	GPIOE->ODR |= (219 << 7);
+	GPIOE->ODR |= (1 << 7);
+	GPIOE->ODR |= (1 << 8);
+	GPIOE->ODR &= ~(1 << 9);
+	GPIOE->ODR |= (1 << 10);
+	GPIOE->ODR |= (1 << 11);
+	GPIOE->ODR &= ~(1 << 12);
+	GPIOE->ODR |= (1 << 13);
+	GPIOE->ODR |= (1 << 14); // 2 olduðu zaman 7 segment 2. þeklinde yanacak.
 	break;
 	case 3:
-	GPIOE->ODR &= ~(255 << 7);
-	GPIOE->ODR |= (207 << 7);
+	GPIOE->ODR |= (1 << 7);
+	GPIOE->ODR |= (1 << 8);
+	GPIOE->ODR |= (1 << 9);
+	GPIOE->ODR |= (1 << 10);
+	GPIOE->ODR &= ~(1 << 11);
+	GPIOE->ODR &= ~(1 << 12);
+	GPIOE->ODR |= (1 << 13);
+	GPIOE->ODR |= (1 << 14); // 3 olduðu zaman 7 segment 3. þeklinde yanacak.
 	break;
 	case 4:
-	GPIOE->ODR &= ~(255 << 7);
-	GPIOE->ODR |= (115 << 8);
+	GPIOE->ODR &= ~(1 << 7);
+	GPIOE->ODR |= (1 << 8);
+	GPIOE->ODR |= (1 << 9);
+	GPIOE->ODR &= ~(1 << 10);
+	GPIOE->ODR &= ~(1 << 11);
+	GPIOE->ODR |= (1 << 12);
+	GPIOE->ODR |= (1 << 13);
+	GPIOE->ODR |= (1 << 14); // 4 olduðu zaman 7 segment 4. þeklinde yanacak.
 	break;
 	case 5:
-	GPIOE->ODR &= ~(255 << 7);
-	GPIOE->ODR |= (237 << 7);
+	GPIOE->ODR |= (1 << 7);
+	GPIOE->ODR &= ~(1 << 8);
+	GPIOE->ODR |= (1 << 9);
+	GPIOE->ODR |= (1 << 10);
+	GPIOE->ODR &= ~(1 << 11);
+	GPIOE->ODR |= (1 << 12);
+	GPIOE->ODR |= (1 << 13);
+	GPIOE->ODR |= (1 << 14); // 5 olduðu zaman 7 segment 5. þeklinde yanacak.
 	break;
 	case 6:
-	GPIOE->ODR &= ~(255 << 7);
-	GPIOE->ODR |= (253 << 7);
+	GPIOE->ODR |= (1 << 7);
+	GPIOE->ODR &= ~(1 << 8);
+	GPIOE->ODR |= (1 << 9);
+	GPIOE->ODR |= (1 << 10);
+	GPIOE->ODR |= (1 << 11);
+	GPIOE->ODR |= (1 << 12);
+	GPIOE->ODR |= (1 << 13);
+	GPIOE->ODR |= (1 << 14); // 6 olduðu zaman 7 segment 6. þeklinde yanacak.
 	break;
 	case 7:
-	GPIOE->ODR &= ~(255 << 7);
-	GPIOE->ODR |= (135 << 7);
+	GPIOE->ODR |= (1 << 7);
+	GPIOE->ODR |= (1 << 8);
+	GPIOE->ODR |= (1 << 9);
+	GPIOE->ODR &= ~(1 << 10);
+	GPIOE->ODR &= ~(1 << 11);
+	GPIOE->ODR &= ~(1 << 12);
+	GPIOE->ODR &= ~(1 << 13);
+	GPIOE->ODR |= (1 << 14); // 7 olduðu zaman 7 segment 7. þeklinde yanacak.
 	break;
 	case 8:
-	GPIOE->ODR &= ~(255 << 7);
-	GPIOE->ODR |= (255 << 7);
+	GPIOE->ODR |= (1 << 7);
+	GPIOE->ODR |= (1 << 8);
+	GPIOE->ODR |= (1 << 9);
+	GPIOE->ODR |= (1 << 10);
+	GPIOE->ODR |= (1 << 11);
+	GPIOE->ODR |= (1 << 12);
+	GPIOE->ODR |= (1 << 13);
+	GPIOE->ODR |= (1 << 14); // 8 olduðu zaman 7 segment 8. þeklinde yanacak.
 	break;
 	case 9:
-	GPIOE->ODR &= ~(255 << 7);
-	GPIOE->ODR |= (239 << 7);
+	GPIOE->ODR |= (1 << 7);
+	GPIOE->ODR |= (1 << 8);
+	GPIOE->ODR |= (1 << 9);
+	GPIOE->ODR |= (1 << 10);
+	GPIOE->ODR &= ~(1 << 11);
+	GPIOE->ODR |= (1 << 12);
+	GPIOE->ODR |= (1 << 13);
+	GPIOE->ODR |= (1 << 14); // 9 olduðu zaman 7 segment 9. þeklinde yanacak.
 	break;
 	case 10:
-	GPIOE->ODR &= ~(255 << 7);
-	GPIOE->ODR |= (247 << 7);
+	GPIOE->ODR |= (1 << 7);
+	GPIOE->ODR |= (1 << 8);
+	GPIOE->ODR |= (1 << 9);
+	GPIOE->ODR &= ~(1 << 10);
+	GPIOE->ODR |= (1 << 11);
+	GPIOE->ODR |= (1 << 12);
+	GPIOE->ODR |= (1 << 13);
+	GPIOE->ODR |= (1 << 14); // 10 olduðu zaman 7 segment A. þeklinde yanacak.
 	break;
 	case 11:
-	GPIOE->ODR &= ~(255 << 7);
-	GPIOE->ODR |= (127 << 7);
+	GPIOE->ODR |= (1 << 7);
+	GPIOE->ODR |= (1 << 8);
+	GPIOE->ODR |= (1 << 9);
+	GPIOE->ODR |= (1 << 10);
+	GPIOE->ODR |= (1 << 11);
+	GPIOE->ODR |= (1 << 12);
+	GPIOE->ODR |= (1 << 13);
+	GPIOE->ODR &= ~(1 << 14); // 11 olduðu zaman 7 segment B þeklinde yanacak. (8 ile karýþmamasý için DP pini kapatýlýr)
 	break;
 	case 12:
-	GPIOE->ODR &= ~(255 << 7);
-	GPIOE->ODR |= (185 << 7);
+	GPIOE->ODR |= (1 << 7);
+	GPIOE->ODR &= ~(1 << 8);
+	GPIOE->ODR &= ~(1 << 9);
+	GPIOE->ODR |= (1 << 10);
+	GPIOE->ODR |= (1 << 11);
+	GPIOE->ODR |= (1 << 12);
+	GPIOE->ODR &= ~(1 << 13);
+	GPIOE->ODR |= (1 << 14); // 12 olduðu zaman 7 segment C. þeklinde yanacak.
 	break;
 	case 13:
-	GPIOE->ODR &= ~(255 << 7);
-	GPIOE->ODR |= (63 << 7);
+	GPIOE->ODR |= (1 << 7);
+	GPIOE->ODR |= (1 << 8);
+	GPIOE->ODR |= (1 << 9);
+	GPIOE->ODR |= (1 << 10);
+	GPIOE->ODR |= (1 << 11);
+	GPIOE->ODR |= (1 << 12);
+	GPIOE->ODR &= ~(1 << 13);
+	GPIOE->ODR &= ~(1 << 14); // 13 olduðu zaman 7 segment D þeklinde yanacak. (0 ile karýþtýrýlmamasý için DP pini kapatýlýr)
 	break;
 	case 14:
-	GPIOE->ODR &= ~(255 << 7);
-	GPIOE->ODR |= (249 << 7);
+	GPIOE->ODR |= (1 << 7);
+	GPIOE->ODR &= ~(1 << 8);
+	GPIOE->ODR &= ~(1 << 9);
+	GPIOE->ODR |= (1 << 10);
+	GPIOE->ODR |= (1 << 11);
+	GPIOE->ODR |= (1 << 12);
+	GPIOE->ODR |= (1 << 13);
+	GPIOE->ODR |= (1 << 14); // 14 olduðu zaman 7 segment E. þeklinde yanacak.
 	break;
 	case 15:
-	GPIOE->ODR &= ~(255 << 7);
-	GPIOE->ODR |= (241 << 7);
+	GPIOE->ODR |= (1 << 7);
+	GPIOE->ODR &= ~(1 << 8);
+	GPIOE->ODR &= ~(1 << 9);
+	GPIOE->ODR &= ~(1 << 10);
+	GPIOE->ODR |= (1 << 11);
+	GPIOE->ODR |= (1 << 12);
+	GPIOE->ODR |= (1 << 13);
+	GPIOE->ODR |= (1 << 14); // 15 olduðu zaman 7 segment F. þeklinde yanacak.
 	break;
 	default:
-	GPIOE->ODR &= ~(255 << 7);
-	GPIOE->ODR |= (191 << 7);
+	GPIOE->ODR |= (1 << 7);
+	GPIOE->ODR |= (1 << 8);
+	GPIOE->ODR |= (1 << 9);
+	GPIOE->ODR |= (1 << 10);
+	GPIOE->ODR |= (1 << 11);
+	GPIOE->ODR |= (1 << 12);
+	GPIOE->ODR &= ~(1 << 13);
+	GPIOE->ODR |= (1 << 14); // default durumda 7 segment 0. þeklinde yanacak.
 	break;
 	}
 }
