@@ -14,3 +14,4 @@ Clock ayarları yapılmadan önce 25000000 olan HSE_VALUE değeri 8000000 olarak
 - PE11 =>E
 - PE12 =>F
 - PE13 =>G
+- PE14 => DP
